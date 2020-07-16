@@ -83,6 +83,14 @@
         "effect": "You may spend 1 AP to gain one Charge of the Gremlin Buff. You may have a maximum of 3 Charges of the Gremlin Buff at any time. While you have any Charges of the Gremlin Buff, Tricks have +1 Bane to Accuracy Rolls against you. Once per Scene on your turn, you may spend all Charges of the Gremlin Buff as a free Action. When you do, you gain X AP that only you can spend, where X is equal to twice the number of Charges spent. You may use that AP only to use Tricks, and you may Disengage 2 between each different Trick you use."
     },
     {
+        "timestamp": "2020-07-16T04:19:08.333Z",
+        "name": "Heliovolt",
+        "action": "Free Action",
+        "frequency": "Scene x3",
+        "trigger": "You use an Electric-Type Attack or Move.",
+        "effect": "Choose one of the following effects:\n* Sprint as a Free Action.\n* Create a Burst 1 Aura. For one full round, all characters in the Aura, including you, are treated as if they were in Harsh Sunlight.\n* Gain +2 Evasion for one full round."
+    },
+    {
         "timestamp": "2020-06-30T04:53:39.926Z",
         "name": "Ice Body",
         "action": "Free Action",
@@ -135,6 +143,12 @@
         "trigger": "An enemy misses you with a ranged attack.",
         "effect": "You Push the target 1 Square, and they are knocked Prone. Leek Parry may be used once per Round.",
         "targets": "The triggering enemy or an enemy within 5 squares of you."
+    },
+    {
+        "timestamp": "2020-07-16T06:04:44.198Z",
+        "name": "Levitation",
+        "frequency": "Static",
+        "effect": "While you aren't touching the ground, you resist all Ground-Type Damage one step further. As long as you are no more than 2 spaces above the ground, whenever you would become Prone, roll a Save Check. On a success, you are not Prone and may Disengage 1 as a Free Action."
     },
     {
         "timestamp": "2020-06-30T04:55:28.297Z",

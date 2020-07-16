@@ -10,7 +10,7 @@
         "target": "Melee, 1 Target",
         "defense": "Evasion",
         "hit": "Choose a Buff the target has. They lose that Buff, and you gain it. If the Buff has multiple Charges you only steal one Charge. ",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical"
     },
     {
@@ -24,7 +24,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "always": "After you use Lunge, you may Disengage into any square adjacent to the target. If you end your turn adjacent to the target, they gain a -3/4/5 penalty to their next damage roll."
     },
@@ -39,7 +39,7 @@
         "target": "Range 6, 1 Target",
         "defense": "Evasion",
         "hit": "The next attack you or an ally makes against the target gets +1 Boon to Accuracy roll.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special"
     },
     {
@@ -52,7 +52,7 @@
         "frequency": "At-Will",
         "target": "Range 5, 1 Target",
         "defense": "Evasion",
-        "damage": "1d6",
+        "damage": "1d",
         "damagetype": "Physical",
         "always": "Roll Accuracy an additional time against one target or repeat this attack against a different target. If you hit the same target more than once, this attack deals +1d6 damage and they become Stuck (Save Ends). On their turn, the target may also spend 1 AP as a Maneuver to cure themselves of being Stuck, but they then lose a Tick of Hit Points if they do so. "
     },
@@ -67,7 +67,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "If the target has higher initiative than you, they become Flinched.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "boost": "The attack is automatically a Critical Hit on a hit, or deals Resisted damage on a miss.",
         "critical": "Make a free Grapple against the target."
@@ -82,10 +82,26 @@
         "frequency": "At-Will",
         "target": "Melee, All Adjacent Targets",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "miss": "Push 1.",
         "boost": "+1d6 Damage. Resisted Damage on miss. All targets are Marked by you for one full round. "
+    },
+    {
+        "timestamp": "2020-07-16T05:05:29.507Z",
+        "name": "Coward's Bop",
+        "type": "Dark",
+        "category": "Strike",
+        "tier": 1,
+        "action": "2 AP",
+        "frequency": "At-Will",
+        "target": "Melee, 1 Target",
+        "defense": "Evasion",
+        "hit": "Disengage 3 after resolving this attack. ",
+        "damage": "3d",
+        "damagetype": "Physical",
+        "miss": "Disengage 5 after resolving this attack. You may Hide as a Free Action if you meet all conditions to do so.",
+        "boost": "+2d6 Damage. Resisted Damage on a Miss. "
     },
     {
         "timestamp": "2020-05-17T22:39:32.606Z",
@@ -98,7 +114,7 @@
         "target": "Melee, 1 Target",
         "defense": "Evasion",
         "hit": "If the target begins and ends their next turn adjacent to you, they lose two Ticks of HP.",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "boost": "+2d6 Damage. Resisted Damage on miss. Increase the HP loss on remaining adjacent to three Ticks."
     },
@@ -112,7 +128,7 @@
         "frequency": "At-Will",
         "target": "Range 6, 1 Target",
         "defense": "Resolve",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "critical": "The target is Slowed (save ends)."
     },
@@ -153,7 +169,7 @@
         "frequency": "At-Will",
         "target": "Cone 2",
         "defense": "Resolve",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "always": "The targets deal Special Damage as if Resisted one step further until the end of their next turn (Limited).",
         "boost": "Snarl becomes your choice of a Cone 3 or a Burst 1. Half damage on miss."
@@ -194,7 +210,7 @@
         "frequency": "At-Will",
         "target": "Line 3",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "always": "Gains the Accurate Keyword against Shaken targets. Against Shaken targets, bonuses added as a result of Boons count towards triggering a Critical Hit.",
         "critical": "Targets are Paralyzed (Save Ends)."
@@ -209,11 +225,36 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "always": "Push the target up to 3 squares and move along with the target as you Push them. This does not provoke Punish Attacks. Dragon Rush deals Super-Effective Damage to the Fighting Type.",
         "boost": "+2d6 Damage. Resisted Damage on miss. ",
         "critical": "The target is Flinched."
+    },
+    {
+        "timestamp": "2020-07-16T04:25:24.974Z",
+        "name": "Charge",
+        "type": "Electric",
+        "category": "Maneuver",
+        "tier": 1,
+        "action": "1 AP",
+        "frequency": "Scene x2",
+        "target": "Self",
+        "always": "On your next turn, all Electric-Type Strikes you use deal damage as if one step more effective and deal half damage on a Miss."
+    },
+    {
+        "timestamp": "2020-07-16T05:09:38.764Z",
+        "name": "Jolt Strike",
+        "type": "Electric",
+        "category": "Strike",
+        "keywords": "Priority",
+        "tier": 1,
+        "action": "1 AP",
+        "frequency": "At-Will",
+        "target": "Melee, 1 Target",
+        "defense": "Evasion",
+        "damage": "2d",
+        "damagetype": "Physical"
     },
     {
         "timestamp": "2020-06-29T23:22:28.679Z",
@@ -225,7 +266,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "The target becomes Paralyzed until the end of their next turn.",
         "boost": "You may use Nuzzle as a Burst 1, and it gains the Accurate keyword."
@@ -241,7 +282,7 @@
         "frequency": "At-Will",
         "target": "Range 4, 1 Target",
         "defense": "Evasion",
-        "hit": "2d6",
+        "damage": "2d",
         "damagetype": "Special"
     },
     {
@@ -257,6 +298,20 @@
         "hit": "The target becomes Paralyzed (Save Ends). If the target is already Paralyzed, you may slide them 3 squares."
     },
     {
+        "timestamp": "2020-07-16T04:30:19.219Z",
+        "name": "Thunderbolt",
+        "type": "Electric",
+        "category": "Strike",
+        "tier": 1,
+        "action": "1 AP",
+        "frequency": "At-Will",
+        "target": "Range 6, 1 Target",
+        "defense": "Evasion",
+        "damage": "2d",
+        "damagetype": "Special",
+        "critical": "The target is Paralyzed (Save Ends)."
+    },
+    {
         "timestamp": "2020-06-29T20:53:43.667Z",
         "name": "Wild Charge",
         "type": "Electric",
@@ -267,7 +322,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "always": "This attack gains a +2 bonus to Critical Hit Range.",
         "boost": "+2d6 Damage.  Resisted damage on Miss.",
@@ -322,7 +377,7 @@
         "frequency": "At-Will",
         "target": "Burst 1",
         "defense": "Resolve",
-        "damage": "1d6",
+        "damage": "1d",
         "damagetype": "Special",
         "always": "All targets have +1 Bane on Accuracy Rolls against you for one full round. You may Disengage 1. ",
         "boost": "+1d6 Damage. Resisted Damage on miss. On a hit, targets that target you with a Strike before the end of their next turn become Weakened for one full round. This effect applies before damage is resolved."
@@ -338,7 +393,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "boost": "+2d6 Damage. Resisted Damage on a miss. ",
         "critical": "On their next turn, the target becomes Slowed until the end of their turn if they move away from you."
@@ -353,7 +408,7 @@
         "frequency": "At-Will",
         "target": "Range 6, 1 Target",
         "defense": "Resolve",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Special",
         "always": "Glimmer Ray creates a Zone in a line between you and the target that lasts for one full round. Attacks that target through this Zone take +1 Bane to Accuracy Roll.",
         "boost": "Targets a Line 6, Friendly. Resisted Damage on miss. Allies caught in the Glimmer Ray add +1 Boon to their next Accuracy roll made before the end of their next turn."
@@ -368,7 +423,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Resolve",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "The user may switch places with the target."
     },
@@ -382,7 +437,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "always": "The target chooses—you get to perform a Grapple against them as a Free Action, or they take a -5 penalty to all Physical Damage Rolls until the end of their next turn.",
         "boost": "+2d6 Damage. Resisted Damage on a Miss. On a Hit, do both options instead of the target choosing."
@@ -410,7 +465,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "Slide the target to any square adjacent to you.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "Circle Throw may be used as a Punish Attack."
     },
@@ -424,7 +479,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "1d6",
+        "damage": "1d",
         "damagetype": "Physical",
         "always": "Roll Accuracy an additional time against one target or repeat this attack against a different target. If you hit the same target more than once, do 1d6 additional damage for each hit past the first and ignore all Armor.",
         "boost": "Roll Accuracy an additional time against one target or repeat this attack against a different target. If you hit a target three times with Double Kick, they are knocked prone. Half damage on miss. "
@@ -439,7 +494,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "special": "If the Target is Stuck, Fast Blade gets a +3 to its Critical Hit range.",
         "boost": "+2d6 Damage.  Resisted damage on Miss.  ",
@@ -467,7 +522,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "The target’s Vigor is reduced by the user’s Tier until the end of the Scene. Limited.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical"
     },
     {
@@ -480,7 +535,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "special": "The Move has different additional effects based on the current Formation being used.\n* Blockade: The attack deals +1D more on a hit.\n* Line: The target becomes Vulnerable, on a hit or miss.\n* Stack: You instead target a Line 4. After resolving the attack, you must change to Line formation."
     },
@@ -495,7 +550,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "If the target begins and ends their next turn adjacent to you, they gain Ongoing Damage 5/8/10 (Fire, Save Ends). If they already had Ongoing Damage (Fire) when this effect triggers, instead they are Flinched.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "boost": "+1d6 Damage. Resisted Damage on miss. Always, the target is Slowed.",
         "critical": "The target gains Ongoing Damage 5/8/10 (Fire, Save Ends). "
@@ -510,7 +565,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "always": "Increase your Initiative by +1 for the rest of the Scene, up to a maximum of +3. Increase your Movement by +2 until the end of your next turn.",
         "boost": "+1d6 Damage. Resisted Damage on miss. Immediately Move as if Slowed and repeat this attack against a second target. Do not gain the Always effect from this second attack. "
@@ -526,7 +581,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical"
     },
     {
@@ -540,7 +595,7 @@
         "target": "Melee, 1 Target",
         "defense": "Evasion",
         "hit": "The target becomes Vulnerable for one full round (Limited).",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "always": "You may Disengage 2 before using Bounce.",
         "boost": "+1d6 Damage. Resisted Damage on a miss. Repeat Bounce on another target. You may not Boost this second attack.",
@@ -556,7 +611,7 @@
         "frequency": "At-Will",
         "target": "Range 6, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "critical": "The target is Confused (Save Ends)."
     },
@@ -571,7 +626,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "If the target has any Physical Armor, they lose a Tick of HP.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical"
     },
     {
@@ -597,7 +652,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "If the target Disengages before the end of their next turn, you may use Wing Spear as a Punish Attack against them.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "special": "You may use Wing Spear as a Punish Attack."
     },
@@ -612,7 +667,7 @@
         "target": "Melee, 1 Target",
         "defense": "Resolve",
         "hit": "The target is Marked until the start of your next turn. If the target is already Marked by you as a result of this Move, the target is Weakened until the end of their next turn. ",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "special": "Accursed Chain may be used as a Punish Attack."
     },
@@ -626,7 +681,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Resolve",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "If the user is Hidden, Astonish gets a +3 bonus to Critical Hit range, the target is Flinched, and you may Push 1. "
     },
@@ -655,7 +710,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "always": "If a Melee Strike causes you to become Shaken, you may use Drain Life against the attacker as a Free Action immediately after the attack is resolved.",
         "boost": "+2d6 Damage. Resisted Damage on miss."
@@ -670,7 +725,7 @@
         "frequency": "At-Will",
         "target": "Range 5, 1 Target",
         "defense": "Resolve",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "always": "The target treats you as if they were Blind until the end of their next turn. This effect is Limited.",
         "boost": "+2d6 Damage. Resisted Damage on miss. Night Shade’s Always effect applies to your adjacent allies too. "
@@ -686,7 +741,7 @@
         "target": "Range 6, 1 Target",
         "defense": "Vigor",
         "hit": "The target is Vulnerable against attacks that target Resolve until the end of the user’s next turn. ",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special"
     },
     {
@@ -699,7 +754,7 @@
         "frequency": "At-Will",
         "target": "Range 6, 1 Target",
         "defense": "Evasion",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Special",
         "always": "You can draw a curved path for Shadow Ball’s trajectory to reach around cover or hit targets out of Line of Sight as long as you know their position.",
         "boost": "+2d6 Damage. Resisted Damage on miss. +2 Range."
@@ -715,7 +770,7 @@
         "frequency": "At-Will",
         "target": "Range 4, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical"
     },
     {
@@ -729,7 +784,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical"
     },
     {
@@ -766,7 +821,7 @@
         "target": "Melee Reach +1, 1 Target",
         "defense": "Evasion",
         "hit": "Push 1",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical"
     },
     {
@@ -792,7 +847,7 @@
         "frequency": "At-Will",
         "target": "Burst 1",
         "defense": "Resolve",
-        "damage": "1d6",
+        "damage": "1d",
         "damagetype": "Special",
         "always": "Create a Drumroll Zone in your square and the targeted squares that lasts until the end of the next round. Allies may give their attacks that target foes in the Drumroll Zone the Sonic tag and cause targets to Flinch on a Super-Effective or Critical Hit.",
         "boost": "+1d6 Damage. Resisted damage on miss. The Drumroll Zone persists as long as you remain in the Zone. "
@@ -832,7 +887,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target or Pass 4",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "Leaf Blade has a +2 to its Critical Range.",
         "boost": "+1d6 Damage. Resisted damage on a miss. Slide 1 all targets.",
@@ -864,7 +919,7 @@
         "frequency": "At-Will",
         "target": "Range 4, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special"
     },
     {
@@ -878,7 +933,7 @@
         "frequency": "At-Will",
         "target": "Range 5, 1 Target",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "boost": "+2d6 Damage. Resisted Damage on a miss. "
     },
@@ -892,7 +947,7 @@
         "frequency": "At-Will",
         "target": "Range 3, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "critical": "The target is knocked Prone."
     },
@@ -906,7 +961,7 @@
         "frequency": "At-Will",
         "target": "Burst 1",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "All spaces in the area of effect become Slow Terrain for one full round.",
         "boost": "+1d6 Damage. Resisted Damage on Miss. All squares adjacent to the area of effect, besides squares you occupy, also become Slow Terrain for one full round. "
@@ -921,7 +976,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "always": "You may spend a Movement Action when using Dig to burrow into soft ground (dirt, sand, mud, etc) and move up to your speed underground, passing under obstacles, before emerging from the ground and using Dig.",
         "boost": " +2d6 Damage. Resisted Damage on miss. The pathway you burrow becomes a stable tunnel that other characters your size and smaller can move through. "
@@ -936,7 +991,7 @@
         "frequency": "At-Will",
         "target": "Range 5, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "critical": "The target is Blinded (Save Ends). "
     },
@@ -978,7 +1033,7 @@
         "frequency": "At-Will",
         "target": "Range 5, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "critical": "The target deals Physical Damage as if it were Resisted one step further until the end of their next turn."
     },
@@ -993,7 +1048,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "If you are Shaken, Avalanche deals +2d6 Damage. ",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "critical": "The target is Flinched."
     },
@@ -1063,7 +1118,7 @@
         "frequency": "At-Will",
         "target": "Close Blast 2",
         "defense": "Vigor",
-        "damage": "1d6",
+        "damage": "1d",
         "damagetype": "Special",
         "always": "Create an Ice Slick Zone in the targeted squares that lasts until the end of the next Round. Ice Slick acts as Snow/Ice Terrain, and when a character on the ground without the appropriate Home Turf enters a square of the Zone for the first time in a round or is hit by a damaging attack while standing on Ice Slick, they must make a Save Check. On a failure, they become Prone.",
         "boost": "Ice Slick becomes a Close Blast 3, and the Zone lasts until the end of the Scene."
@@ -1078,7 +1133,7 @@
         "frequency": "At-Will",
         "target": "Line 4",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "always": "Reduce the target’s Initiative and Evasion by 2 for one full round.",
         "boost": "+1d6 Damage. Resisted damage on a miss. Hit targets are Chilled for one full round."
@@ -1093,7 +1148,7 @@
         "frequency": "At-Will",
         "target": "Range 6, Blast 2",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "boost": "+1d6 Damage. Resisted Damage on Miss. Hit characters are Chilled (Save Ends)"
     },
@@ -1142,9 +1197,21 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "1d6",
+        "damage": "1d",
         "damagetype": "Physical",
         "special": "Roll Accuracy twice for this attack. If both rolls hit, this attack deals +1d6 damage and you may Push 2."
+    },
+    {
+        "timestamp": "2020-07-16T05:12:29.018Z",
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Maneuver",
+        "keywords": "Buff",
+        "tier": 1,
+        "action": "Move Action",
+        "frequency": "Scene x1",
+        "target": "Self",
+        "always": "You gain two Charges of the After-Image Buff. For each Charge of this Buff you hold, you gain +2 Evasion. Whenever you're missed by an attack due to the Evasion granted by an After-Image, lose one Charge of the Buff. You may also spend one Charge of the After-Image Buff when making a Melee Attack to gain +1 Boon on the Accuracy Roll."
     },
     {
         "timestamp": "2020-06-29T20:33:08.938Z",
@@ -1187,6 +1254,19 @@
         "always": "You may Disengage 2 after using Fake Out."
     },
     {
+        "timestamp": "2020-07-16T04:22:00.218Z",
+        "name": "Flash",
+        "type": "Normal",
+        "category": "Trick",
+        "tier": 1,
+        "action": "1 AP",
+        "frequency": "Scene x2",
+        "target": "Burst 1",
+        "defense": "Resolve",
+        "hit": "Hit targets take +1 Bane to all Accuracy Rolls until the end of their next turn.",
+        "always": "For one full round, all attacks targeting you take a +1 Bane to Accuracy Roll."
+    },
+    {
         "timestamp": "2020-06-29T21:49:53.258Z",
         "name": "Flee",
         "type": "Normal",
@@ -1219,7 +1299,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "special": "You may forfeit your Move action when you hit with this attack; if you do, the target is Flinched.",
         "critical": "The target is pushed 1 meter away and knocked prone."
@@ -1261,7 +1341,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "The target is Marked by you for one full round.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "critical": "The target is Paralyzed."
     },
@@ -1342,7 +1422,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "special": "Slam may be used as a Punish Attack. If it is, it deals Resisted damage on a Miss and causes a Hit target to fall Prone."
     },
@@ -1356,7 +1436,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "This attack gains a +2 bonus to Critical Hit Range against targets of smaller size than the user.",
         "critical": "The target is Flinched."
@@ -1384,7 +1464,7 @@
         "frequency": "Scene x1",
         "target": "Range 6, Blast 2",
         "defense": "Evasion",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Special",
         "always": "Targets cannot make Punish Attacks for one full Round. Attacks made against allies in the area of effect take +1 Bane to accuracy rolls for one full round.",
         "boost": "+1d6 Damage.  Resisted Damage on a miss.  Hit Targets take a Bane to Accuracy on their next Attack."
@@ -1413,7 +1493,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Evasion",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "always": "This attack gains a +2 bonus to Critical Hit Range.",
         "boost": "+2d6 Damage. Resisted damage on Miss.",
@@ -1435,6 +1515,21 @@
         "boost": "Yawn gains the Friendly Keyword. The user no longer becomes Weakened as a result of Yawn."
     },
     {
+        "timestamp": "2020-07-16T05:08:15.993Z",
+        "name": "Acid Spray",
+        "type": "Poison",
+        "category": "Strike",
+        "tier": 1,
+        "action": "2 AP",
+        "frequency": "At-Will",
+        "target": "Line 4",
+        "defense": "Vigor",
+        "damage": "2d",
+        "damagetype": "Special",
+        "always": "Targets lose all Armor against Special Damage for one full round. (Limited)",
+        "boost": "+1d6 Damage. Resisted Damage on a Miss. Ignore the Limited restriction on this Move's effects."
+    },
+    {
         "timestamp": "2020-06-09T05:24:12.420Z",
         "name": "Goo Glomp",
         "type": "Poison",
@@ -1444,7 +1539,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "always": "If the target starts its next turn adjacent to you, it becomes Slowed until the end of its turn.",
         "boost": "+2d6 Damage. Resisted Damage on a Miss. All characters who start their next turn within a Close Burst 2 of you become Slowed until the end of their turn. "
@@ -1460,7 +1555,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "If the target begins and ends their next turn adjacent to you, they gain Ongoing Damage 5/8/10 (Poison, Save Ends). If they already had Ongoing Damage (Poison) when this effect triggers, instead increase their Ongoing Damage by the same amount, to a maximum of 10/16/20.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "boost": "+2d6 Damage. Resisted Damage on miss. Always, the target is Slowed until the end of their next turn.",
         "critical": "The target gains Ongoing Damage 5/8/10 (Poison, Save Ends)."
@@ -1501,7 +1596,7 @@
         "frequency": "At-Will",
         "target": "Range 6, 1 Target",
         "defense": "Resolve",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "always": "For each Mental Status Condition on the target, Extrasensory has +1 to Accuracy and Critical Hit Range.",
         "critical": "The target is Flinched."
@@ -1543,7 +1638,7 @@
         "target": "Range 4, Blast 2",
         "defense": "Resolve",
         "hit": "Deals +1d6 damage to targets suffering from a Mental Status Condition.",
-        "damage": "1d6",
+        "damage": "1d",
         "damagetype": "Special"
     },
     {
@@ -1556,7 +1651,7 @@
         "frequency": "At-Will",
         "target": "Range 6, 1 Target",
         "defense": "Resolve",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "critical": "The target is Confused (Save Ends)."
     },
@@ -1571,7 +1666,7 @@
         "target": "Range 6, 1 Target",
         "defense": "Vigor",
         "hit": "The target loses HP equal to their Physical Armor.",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Special",
         "always": "Foes adjacent to your target lose HP equal to the target’s Special Armor. ",
         "boost": "+1d6 Damage. Resisted Damage on miss. Affected foes lose double HP from the armor-based HP loss effect. "
@@ -1609,7 +1704,7 @@
         "frequency": "At-Will",
         "target": "Range 5, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "special": "On a Critical Hit, for one full round, you gain +3/4/5 Armor against all damage, deal +3/4/5 damage with all damaging attacks, and gain a +2 bonus to Initiative and to all Defenses.",
         "boost": "+1d6 Damage. You Critically Hit with Ancient Power. "
@@ -1624,7 +1719,7 @@
         "frequency": "At-Will",
         "target": "Burst 1",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "miss": "Resisted Damage.",
         "boost": "You are knocked prone, and gain +3/4/5 armor against all damage until the start of your next turn."
@@ -1654,7 +1749,7 @@
         "target": "Melee, 1 Target",
         "defense": "Evasion",
         "hit": " +1d6 Damage and Push 1 for each Rollout Counter you have. Lose all Rollout Counters.",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "miss": "Gain one Rollout Counter, up to a maximum of 3, and Disengage 2.",
         "boost": "+1d6 Damage. Half Damage on miss. Rollout becomes Pass 4. "
@@ -1670,7 +1765,7 @@
         "target": "Melee, 1 Target",
         "defense": "Evasion",
         "hit": "You may Slide the target 1 Square. Against Shaken or Vulnerable targets, this attack ignores Armor.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "The target loses all Armor for 1 Full Round.",
         "boost": "+2d6 Damage. Resisted Damage on miss."
@@ -1686,7 +1781,7 @@
         "target": "Melee, 1 Target",
         "defense": "Vigor",
         "hit": "If the target is of a smaller size than you, +1d6 more damage.",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "special": "Heavy Slam may be used as a Punish Attack. If it is, it deals Resisted damage on a Miss and causes a Hit target to fall Prone."
     },
@@ -1713,7 +1808,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "special": "You may forfeit your Move action when you hit with this attack; if you do, the target is Flinched.",
         "critical": "The target is pushed 1 meter away and knocked prone."
@@ -1729,7 +1824,7 @@
         "target": "Melee, 1 Target",
         "defense": "Evasion",
         "hit": "If the target starts their next turn adjacent to you, they lose two Ticks of HP if they take a normal Move or Disengage action on that turn.",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Physical",
         "boost": "+2d6 Damage. Resisted Damage on miss. Increase the HP loss on movement to three Ticks."
     },
@@ -1754,7 +1849,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target or Pass 4",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "Until the end of your next turn, you gain +5 Physical Damage Reduction against the target(s).",
         "boost": "+1d6 Damage, and you resist Physical attacks one step further until the end of your next turn."
@@ -1770,7 +1865,7 @@
         "frequency": "At-Will",
         "target": "Melee, 1 Target or Pass 4",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Physical",
         "always": "Allies you pass through may Disengage 1.",
         "boost": "+1d6 Damage. Resisted damage on a miss. All targets become Prone. "
@@ -1785,7 +1880,7 @@
         "frequency": "At-Will",
         "target": "Range 6, Blast 2",
         "defense": "Vigor",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "boost": "Becomes a Ranged Blast 3. Half damage on miss.",
         "critical": "Targets are Slowed (Save Ends)."
@@ -1812,7 +1907,7 @@
         "target": "Range 6, 1 Target",
         "defense": "Evasion",
         "hit": "The target is Pushed 3 squares.",
-        "damage": "3d6",
+        "damage": "3d",
         "damagetype": "Special",
         "miss": "The target is Pushed 1 square.",
         "boost": "+2d6 Damage. Resisted Damage on miss. Target is Soaked on a hit."
@@ -1827,7 +1922,7 @@
         "frequency": "At-Will",
         "target": "Range 6, 1 Target",
         "defense": "Evasion",
-        "damage": "2d6",
+        "damage": "2d",
         "damagetype": "Special",
         "critical": "The target is Confused (Save Ends)."
     }
